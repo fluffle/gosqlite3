@@ -10,7 +10,7 @@ import "time"
 
 type Errno int
 
-func (e Errno) String() (err string) {
+func (e Errno) Error() (err string) {
 	if err = errText[e]; err == "" {
 		err = fmt.Sprintf("errno %v", int(e))
 	}

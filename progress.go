@@ -4,7 +4,7 @@ package sqlite3
 import "C"
 
 type ProgressReport struct {
-	error
+	Error     error
 	Total     int
 	Remaining int
 	Source    string
